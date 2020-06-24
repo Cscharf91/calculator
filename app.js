@@ -188,8 +188,10 @@ divideBtn.addEventListener('click', () => {
 
 let equalsBtn = document.querySelector('#equals');
 equalsBtn.addEventListener('click', () => {
-    if (prevNum == '' || currentNum == '') {
+    if (currentNum == '') {
     displayNum.textContent = '';
+    } else if (prevNum == '') {
+        displayNum.textContent = currentNum;
     } else {
     currentNum = operate(operator, prevNum, currentNum);
     displayNum.textContent = currentNum;
