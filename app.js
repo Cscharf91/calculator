@@ -125,6 +125,7 @@ buttonNine.addEventListener('click', () => {
 
 let clearBtn = document.querySelector('#clear');
 clearBtn.addEventListener('click', () => {
+    prevNum = '';
     currentNum = '';
     operator = '';
     displayNum.textContent = currentNum;
